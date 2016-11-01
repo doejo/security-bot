@@ -86,7 +86,7 @@ DEBUG=1 rake run
 ## Deployment
 
 This project was created in a day so there was not any plans on rolling it out to
-any hosting provider like Heroku. We're running it via cron job on a chep DigitalOcean
+any hosting provider like Heroku. We're running it via cron job on a cheap DigitalOcean
 droplet. It works™.
 
 Here's an example: (`crontab -e`)
