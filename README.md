@@ -95,6 +95,6 @@ Here's an example: (`crontab -e`)
 */5 * * * * bash -c "cd /home/deploy/security-bot && /usr/local/bin/bundle exec rake run >> /home/deploy/security-bot.log"
 ```
 
-## Licens
+## License
 
 MIT
