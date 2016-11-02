@@ -95,6 +95,27 @@ Here's an example: (`crontab -e`)
 */5 * * * * bash -c "cd /home/deploy/security-bot && /usr/local/bin/bundle exec rake run >> /home/deploy/security-bot.log"
 ```
 
+## Running with Docker
+
+Pull the image:
+
+```
+docker pull doejo/security-bot
+```
+
+Start the app:
+
+```
+docker run \
+  -d \
+  --restart=always \
+  --name=security-bot \
+  -e RUN_PERIOD=300 \
+  -v /path/to/config.yml:/app/config.yml \
+  -v /path/to/items.txt:/app/items.txt \
+  doejo/security-bot
+```
+
 ## License
 
 MIT
