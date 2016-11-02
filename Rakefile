@@ -2,6 +2,11 @@ require "bundler/setup"
 
 task :run do
   require_relative "lib/runner"
+
+  if !File.exists?("./config.yml")
+    puts "Please create config.yml"
+    exit 1
+  end
   
   runner = Runner.new("./config.yml")
   period = ENV["RUN_PERIOD"].to_i
