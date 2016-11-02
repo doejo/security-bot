@@ -1,0 +1,4 @@
+log/*
+items.txt
+.git
+.env
